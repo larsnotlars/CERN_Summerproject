@@ -8,24 +8,9 @@ new_variables:
    part_px:  pfcand_pt * np.cos(jet_phi + pfcand_phirel)
    part_py:  pfcand_pt * np.sin(jet_phi + pfcand_phirel)
    part_pz:  pfcand_pt * np.sinh(jet_eta + pfcand_etarel)
-   #part_pt_log: pfcand_pt_log
    part_energy: np.sqrt(pfcand_mass**2 + pfcand_pt**2) * np.cosh(jet_eta + pfcand_etarel)
    part_e_log: np.log(part_energy)
-   #part_logptrel: pfcand_ptrel_log
-   #part_logerel: pfcand_erel_log
-   # part_deltaR: pfcand_deltaR
-   # part_charge: pfcand_charge
-   # part_isChargedHadron: pfcand_isChargedHad
-   # part_isNeutralHadron: pfcand_isNeutralHad
-   # part_isPhoton: pfcand_isGamma
-   # part_isElectron: pfcand_isEl
-   # part_isMuon: pfcand_isMu
-   # part_d0: pfcand_dxy
-   # part_d0err: pfcand_dxydxy
-   # part_dz: pfcand_dz
-   # part_dzerr: pfcand_dzdz
-   # part_deta: pfcand_etarel
-   # part_dphi: pfcand_phirel
+
    part_mask: ak.ones_like(part_energy)
 
 preprocess:
