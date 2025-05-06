@@ -45,16 +45,7 @@ After training the program will run the best version of the model on your valida
 
 In the Jupyter-notebook you can find the code to create graphs and calculate the metrics for the models.
 
-# HIP Specific infos
 
-If you run the code on Hefaistos Virtual Machine you dont need to download ROOT.
-Before you compile just type
-`source /work/data/rootbinaries/root/bin/thisroot.sh`
-in the command line before you compile with 
-``` g++ -Wall -o program program.cpp `root-config --cflags --libs```
-
-There is already raw files at this location which would need to be preprocessed
-`/work/data/VBS/DNNTuplesAK8/`
 
 # My Work
 A summary of what I did can be found in the presentation @ `Project_summary.pdf`
